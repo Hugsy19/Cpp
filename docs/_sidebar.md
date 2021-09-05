@@ -18,3 +18,4 @@
   * [标准库特殊设施](cpp_primer/ch17.md)
   * [用于大型程序的工具](cpp_primer/ch18.md)
   * [特殊工具与技术](cpp_primer/ch19.md)
+* [Effective C++](effective_cpp/README.md)

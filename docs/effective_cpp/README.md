@@ -1,8 +1,8 @@
-<h1 align="center">C++ Primer</h1>
+<h1 align="center">Effective C++</h1>
 
 ## 关于
 
-本文档是《C++ Primer 中文版（第 5 版）》的学习笔记，是基于`applenod`等人整理的学习仓库[Cpp_Primer_Practice](https://github.com/applenob/Cpp_Primer_Practice)中已有的笔记，增删、整理而成，在此感谢他们的分享。
+本文档是《Effective C++》与《Effective Modern C++》的学习笔记。
 
 文档中的内容大都摘录自原书，算得上是整本书的浓缩版，建议配合原书使用。
 
@@ -10,8 +10,8 @@
 
 ## 参考
 
-* [Cpp_Primer_Practice](https://github.com/applenob/Cpp_Primer_Practice)
-* [C++ Primer 中文版（第 5 版）](https://book.douban.com/subject/25708312/)
+* [Effective C++](https://book.douban.com/subject/5387403/)
+* [Effective Modern C++](https://book.douban.com/subject/30178902/)
 
 ## 许可
 
