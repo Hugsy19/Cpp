@@ -19,3 +19,17 @@
   * [用于大型程序的工具](cpp_primer/ch18.md)
   * [特殊工具与技术](cpp_primer/ch19.md)
 * [Effective C++](effective_cpp/README.md)
+  * [习惯C++](effective_cpp/ch1.md)
+  * [构造/析构/赋值运算]
+  * [资源管理]
+  * [设计与声明]
+  * [实现]
+  * [继承与面向对象]
+  * [模板与泛型编程]
+  * [定制new和delete]
+  * [类型推导与auto]
+  * [现代C++]
+  * [智能指针]
+  * [通用引用与完美转发]
+  * [lambda表达式]
+  * [并发]
