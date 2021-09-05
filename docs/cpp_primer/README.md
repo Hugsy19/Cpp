@@ -1,6 +1,6 @@
 <h1 align="center">C++ Primer</h1>
 
-## 关于
+### 关于
 
 本文档是《C++ Primer 中文版（第 5 版）》的学习笔记，是基于`applenod`等人整理的学习仓库[Cpp_Primer_Practice](https://github.com/applenob/Cpp_Primer_Practice)中已有的笔记，增删、整理而成，在此感谢他们的分享。
 
@@ -8,12 +8,12 @@
 
 如发现问题欢迎指出~
 
-## 参考
+### 参考
 
 * [Cpp_Primer_Practice](https://github.com/applenob/Cpp_Primer_Practice)
 * [C++ Primer 中文版（第 5 版）](https://book.douban.com/subject/25708312/)
 
-## 许可
+### 许可
 
 本文档由[docsify](https://docsify.js.org/#/zh-cn/)动态生成，引用各种内容均来源于网络及上述参考中的各种资料，如有侵权，请及时联系删除。
 

@@ -1,4 +1,4 @@
-* C++ Primer
+* [C++ Primer](cpp_primer/README.md)
   * [开始](cpp_primer/ch01.md)
   * [变量和基本类型](cpp_primer/ch02.md)
   * [字符串、向量和数组](cpp_primer/ch03.md)
