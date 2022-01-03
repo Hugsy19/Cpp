@@ -20,16 +20,16 @@
   * [特殊工具与技术](cpp_primer/ch19.md)
 * [Effective C++](effective_cpp/README.md)
   * [习惯C++](effective_cpp/ch1.md)
-  * [构造/析构/赋值运算]
-  * [资源管理]
-  * [设计与声明]
-  * [实现]
-  * [继承与面向对象]
-  * [模板与泛型编程]
-  * [定制new和delete]
-  * [类型推导与auto]
-  * [现代C++]
-  * [智能指针]
-  * [通用引用与完美转发]
-  * [lambda表达式]
-  * [并发]
+  * [构造/析构/赋值运算](effective_cpp/ch2.md)
+  * [资源管理](effective_cpp/ch3.md)
+  * [设计与声明](effective_cpp/ch4.md)
+  * [实现](effective_cpp/ch5.md)
+  * [继承与面向对象](effective_cpp/ch6.md)
+  * [模板与泛型编程](effective_cpp/ch7.md)
+  * [定制new和delete](effective_cpp/ch8.md)
+  * [类型推导与auto](effective_cpp/ch9.md)
+  * [现代C++](effective_cpp/ch10.md)
+  * [智能指针](effective_cpp/ch11.md)
+  * [通用引用与完美转发](effective_cpp/ch12.md)
+  * [lambda表达式](effective_cpp/ch13.md)
+  * [并发](effective_cpp/ch14.md)
