@@ -16,7 +16,7 @@
 
 - 使用`#define`定义的名称不会被记录到符号表、无法提供任何封装性，且盲目的宏替换过程可能产生更多的代码量。
 - 尽量用`const`常量替换`#define`定义的常量，但要注意：
-  - 常量定义式被放在头文件时，有必要将指针声明为`const`，如`const char* const authorName = "Scott Meyers";`；
+  - 常量定义式被放在头文件时，有必要将指针声明为`const`，如`const char *const authorName = "Scott Meyers";`；
   - 类的专属常量需要为`static`成员，且定义类时所写的只是该成员的**声明式**，往往还需要再使用时提供其**定义式**；
   - 当编译器不支持在类内对静态成员初始化时，可使用名为“enum hack”的补偿做法：**枚举类型的数值可充当ints使用**
     ```cpp
@@ -65,4 +65,33 @@
 
 ## 确定对象使用前已被初始化
 
-- 
+-  永远在使用对象之前将其初始化：
+   -  对没有任何成员的内置类型必须手动进行初始化，C++不保证它们的初始化；
+   -  在内置类型以外，初始化的责任落在构造函数。
+-  对象的成员需要通过**成员初始值列表**（memory initialization list）来完成初始化过程，而非构造函数体之内的赋值操作，且前者发生在后者之前。
+   -  后者需要先调用default构造函数完成初始化再赋新值，前者则一般只需要进行一次拷贝构造；
+   -  `const`或引用类型的成员变量一定需要初值，而不能被赋值。
+-  尽管编译器会为自定义类型自动调用default构造函数，但还是需要再初始值列表中列出所有的成员变量，以免发生遗漏。
+-  C++存在固定的成员初始化次序：
+   -  基类的初始化早于派生类；
+   -  类中的成员变量总以其声明的次序被初始化；
+      -  因此初始值列表中列出的成员变量次序应与其声明次序一直。
+-  函数内的`static`对象为**local static**对象，其他对象则为**non-local static**对象。
+   -  C++对定于在不同编译单元内的**non-local static**对象的初始化顺序无明确定义；
+   -  使用**local static**对象代替**non-local static**对象可解决以上初始化顺序所带来的问题：
+   ```cpp
+   class FileSystem { ... };
+   FileSystem& tfs()
+   {
+     static FileSystem fs;
+     return fs;
+   }
+
+   class Directory { ... };
+   Directory::Directory( params )
+   {
+     ...
+     std::size_t disks = tfs().numDisks();
+     ...
+   }
+   ```
